@@ -25,11 +25,7 @@ mod test {
     #[test]
     fn success_two_sum() {
         let array = [1, 2, 3, 4, 5];
-        let result = two_sum(&array, 8);
-
-        let (i, j) = result.expect("Expected a valid pair for target 8");
-
-        assert_eq!((i, j), (2, 4));
+        assert_eq!(two_sum(&array, 8), Some((2, 4)));
     }
 
     #[test]
